@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
+/*jshint esversion: 6 */
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -38,12 +39,4 @@ export const GlobalStyle = createGlobalStyle`
             color: var(--white);
         }
     }
-
 `;
-
-
-
-
-
-
-

@@ -1,17 +1,18 @@
-import React from 'react';
+/*jshint esversion: 6 */
+import React from "react";
 //  styles
-import { Wrapper, Content, Text } from './HeroImage.styles';
+import { Wrapper, Content, Text } from "./HeroImage.styles";
 
 //component
-const HeroImage = ({image, title, text}) => (
-    <Wrapper image={image}>
-        <Content>
-            <Text>
-                <h1>{title}</h1>
-                <p>{text}</p>
-            </Text>
-        </Content>
-    </Wrapper>
-)
+const HeroImage = ({ image, title, text }) => (
+  <Wrapper image={image}>
+    <Content>
+      <Text>
+        <h1>{title}</h1>
+        <p>{text}</p>
+      </Text>
+    </Content>
+  </Wrapper>
+);
 
 export default HeroImage;
