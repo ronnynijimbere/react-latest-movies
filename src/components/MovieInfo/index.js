@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 import React from "react";
-
+import PropTypes from "prop-types";
 // Components
 import Thumb from "../Thumb";
 // Config
@@ -28,8 +28,10 @@ const MovieInfo = ({ movie }) => (
         <p>{movie.overview}</p>
 
         <div className="rating-directors">
-          <h3>RATING</h3>
-          <div className="score">{movie.vote_average}</div>
+          <div>
+            <h3>RATING</h3>
+            <div className="score">{movie.vote_average}</div>
+          </div>
           <div className="director">
             <h3>DIRECTOR{movie.directors.length > 1 ? "S" : ""}</h3>
             {movie.directors.map((director) => (
@@ -41,5 +43,9 @@ const MovieInfo = ({ movie }) => (
     </Content>
   </Wrapper>
 );
+
+MovieInfo.propTypes = {
+  movie: PropTypes.object
+}
 
 export default MovieInfo;
